@@ -2,6 +2,12 @@
 
 Toutes les évolutions notables de ce plugin. Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/), versions : [SemVer](https://semver.org/lang/fr/).
 
+## [1.1.0] - 2026-10-07
+
+### Ajouté
+
+- Nouvelle règle : une confirmation est demandée avant une installation globale de paquets (npm, pnpm, yarn, bun).
+
 ## [1.0.0] - 2026-10-06
 
 ### Ajouté

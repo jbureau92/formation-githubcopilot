@@ -228,7 +228,15 @@ export const REGLES = [
     raison: "Publication d'un paquet ou d'une image : l'action est publique et difficile à annuler.",
     conseil: "Laissez l'utilisateur publier lui-même, après relecture de la version.",
   },
-
+  // --- Installations de paquets --------------------------------------------
+  {
+    id: 'installation-globale',
+    decision: 'ask',
+    cible: 'commande',
+    motif: /\b(npm|pnpm|yarn|bun)\b[^\n;&|]*(?:\s-g|\bglobal)\b/i,
+    raison: "Installation globale : l'action est difficile à annuler.",
+    conseil: "Laissez l'utilisateur installer globalement lui-même, après relecture de la commande.",
+  },
   // --- Secrets ------------------------------------------------------------------
   {
     id: 'secrets-lecture',
